@@ -1,4 +1,4 @@
-# Integração Epbx Manager
+# Integração i91
 
 A api de integração do i91 possui um conjunto de métodos que facilitam a integração. 
 
@@ -45,8 +45,9 @@ $("#loginSubmit").click(function () {
 });
 ```
 
-```javascript
+
 ## Evento recebendo chamada
+```javascript
  service.onChamada = function (ramal, chamada) {
    console.log('Recebendo chamada do número ' + chamada.Telefone);
  };
