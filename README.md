@@ -28,13 +28,16 @@ $("#loginSubmit").click(function () {
 ## Evento recebendo chamada
 ```javascript
  service.onChamada = function (ramal, chamada) {
+   console.log('Serviço ' + chamada.Destinatario);
    console.log('Recebendo chamada do número ' + chamada.Telefone);
+  
  };
  ```
  
 ## Evento de chamada Atendida
 ```javascript
  service.onAtendido = function (ramal, chamada) {
+   console.log('Serviço ' + chamada.Destinatario);
    console.log('Recebendo chamada do número ' + chamada.Telefone);
    console.log('ID Ligação ' + chamada.LigacaoId);
  };
