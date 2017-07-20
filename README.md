@@ -39,20 +39,26 @@ window.RTCPeerConnection = window.RTCPeerConnection || window.mozRTCPeerConnecti
 
 
 ## Função para Logar Ramal
+```javascript
 $("#loginSubmit").click(function () {  
     login($("#usernameInput").val(), $("#passwordInput").val()).then(conectarSignalR).catch(loginError);
 });
+```
 
+```javascript
 ## Evento recebendo chamada
  service.onChamada = function (ramal, chamada) {
    console.log('Recebendo chamada do número ' + chamada.Telefone);
  };
+ ```
  
 ## Evento de chamada Atendida
+```javascript
  service.onAtendido = function (ramal, chamada) {
    console.log('Recebendo chamada do número ' + chamada.Telefone);
    console.log('ID Ligação ' + chamada.LigacaoId);
  };
+ ```
 
 
 
