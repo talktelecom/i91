@@ -24,22 +24,18 @@ $(function () {
         $("#usernameInput").val(localStorage.getItem("login"));
         $("#passwordInput").val(localStorage.getItem("senha"));
 
-        // desenv
-        //var urlBase = "http://localhost";
-        //var urlToken = urlBase + ':51635/oauth2/access_token';
-        //var urlApi = urlBase + ':51635/api/';
 
-        var urlBase = "http://atlantis";
-        var urlToken = urlBase + ':5656/Service/oauth2/access_token';
-        var urlApi = urlBase + ':5656/Service/api/';
+        var urlBase = "https://ipcorp.i91.com.br";
+        var urlToken = urlBase + '/Service/oauth2/access_token';
+        var urlApi = urlBase + '/Service/api/';
 
 
-        var clientId = "914f0508cf";
+        var clientId = "d471d77ab3d924d";
 
         var service = {};
 
         var config = {
-            url: urlBase + ':8102/middleware',  // url do Middleware de Telefonia
+            url: urlBase + ':8101/middleware',  // url do Middleware de Telefonia
             access_token: "",   // access token retornado da webApi
             refresh_token: "", // refresh token retornado da webApi
             isDevMode: false     // quando true, mostra os logs do signalR

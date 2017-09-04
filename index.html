@@ -1,27 +1,30 @@
-﻿@{
-    Layout = null;
-}
-<!DOCTYPE html>
 <html>
+
 <head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Index</title>
-    @Styles.Render("~/Content/bootstrap")
-    @Styles.Render("~/Content/bootstrap-theme")
-    <script src="~/Scripts/jquery-2.1.4.min.js"></script>
-    <script src="~/Scripts/jquery.signalR.min.js"></script>
-    <script src="~/Scripts/server.js"></script>
-    <script src="~/Scripts/require.min.js" data-main="Scripts/atendimentoService.js"></script>
-</head>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
+
+
+  <script src="http://ipcorp.i91.com.br/Scripts/jquery-2.1.4.min.js"></script>
+  <script src="https://ipcorp.i91.com.br/Scripts/jquery.signalR.min.js"></script>
+  <script src="https://ipcorp.i91.com.br/Scripts/server.js"></script>
+  <script src="https://ipcorp.i91.com.br/Scripts/require.js" data-main="atendimentoService.js"></script>
+
+
+
+</head>   
+
 <body>
-    <div id="loginForm" class="row vertical-offset-100">
+    
+  <div id="loginForm" class="row vertical-offset-100">
         <div class="col-md-4 col-md-offset-4">
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <h3 class="panel-title">Login</h3>
                 </div>
                 <div class="panel-body">
-                    <img id="loading" src="~/Content/hourglass.svg" />
+                
                     <div class="container-fluid">
                         <div class="row">
 
@@ -110,5 +113,7 @@
             </div>
         </div>
     </div>
-</body>
+
+</body> 
+
 </html>

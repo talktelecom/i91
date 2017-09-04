@@ -1,2 +1,0 @@
-﻿1-O Cti Server deve estar configuraado com a flag abaixo igual a 0 para funcionar o ramal 1000.
- send_request_line=0
