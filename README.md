@@ -9,10 +9,10 @@ Para utilizar a api de integração você precisa fazer a referência do java sc
 
 
 ```html
-  <script src="~/Scripts/jquery-2.1.4.min.js"></script>
-  <script src="~/Scripts/jquery.signalR.min.js"></script>
-  <script src="~/Scripts/server.js"></script>
-  <script src="~/Scripts/require.min.js" data-main="Scripts/atendimentoService.js"></script>
+  <script src="http://ipcorp.i91.com.br/Scripts/jquery-2.1.4.min.js"></script>
+  <script src="https://ipcorp.i91.com.br/Scripts/jquery.signalR.min.js"></script>
+  <script src="https://ipcorp.i91.com.br/Scripts/server.js"></script>
+  <script src="https://ipcorp.i91.com.br/Scripts/require.js" data-main="atendimentoService.js"></script>
 
 ```
 
